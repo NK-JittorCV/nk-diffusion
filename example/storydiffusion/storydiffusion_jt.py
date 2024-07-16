@@ -663,3 +663,14 @@ def concatenate_images(images, direction="vertical"):
 
 concatenated_img = concatenate_images(id_images, direction="vertical")
 concatenated_img.save("output/concatenated_image.jpg")
+
+real_images = []
+for real_prompt in real_prompts:
+    cur_step = 0
+    real_prompt = apply_style_positive(style_name, real_prompt)
+    temp_img = pipe(real_prompt,  num_inference_steps=num_steps, guidance_scale=guidance_scale,  height = height, width = width,negative_prompt = negative_prompt).images
+    real_images.append(temp_img)
+
+concatenated_img02 = concatenate_images(real_images, direction="vertical")
+concatenated_img02.save("/home/u2120220610/jittordiffusion/output/concatenated_image02.jpg")
+
