@@ -51,7 +51,11 @@ Experience the **Jittor** version of Photomaker just like the original PyTorch v
   <img src="./readme/results.png" height=450>
 </p>
 
-We can see that the quality of the Iron Man Newton images generated using the Jittor version of Photomaker is **on par with** the PyTorch version. Both versions produce images that are *imaginative and diverse*. 
+<p align="center">
+  <img src="./readme/results1.png" height=450>
+</p>
+
+We can see that whether it’s generating an Iron Man Newton image with Photomaker or creating a multi-color style image of Scarlett Johansson, the Jittor version **delivers the same quality** as the PyTorch version. Both versions produce images that are *imaginative and diverse*. 
 
 Additionally, the Jittor version offers **enhanced performance**, making the image generation process faster and more efficient. This improvement allows users to create stunning visuals with greater ease and speed, without compromising on the **artistic creativity and variety** that Photomaker is known for.
 
