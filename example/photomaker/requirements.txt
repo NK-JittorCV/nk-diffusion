@@ -1,0 +1,12 @@
+git+https://github.com/JittorRepos/jittor
+git+https://github.com/JittorRepos/jtorch
+git+https://github.com/JittorRepos/diffusers_jittor
+git+https://github.com/JittorRepos/transformers_jittor
+git+https://github.com/JittorRepos/JDiffusion
+spaces==0.19.4
+numpy
+accelerate
+safetensors
+omegaconf
+peft
+gradio>=4.0.0
