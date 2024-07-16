@@ -59,5 +59,5 @@ Follow the README in example folder to install the application you want!
 
 The projects we currently support in the Jittor version: 
 
-- <img src="https://photo-maker.github.io/assets/logo.png" height=50> PhotoMaker: Customizing Realistic Human Photos via Stacked ID Embedding
-- <img src="https://github.com/HVision-NKU/StoryDiffusion/assets/49511209/f79da6b7-0b3b-4dd7-8dd0-ba0b15306fe6" height=50> StoryDiffusion: Consistent Self-Attention for Long-Range Image and Video Generation 
+- [PhotoMaker](https://github.com/TencentARC/PhotoMaker) <img src="https://photo-maker.github.io/assets/logo.png" height=25>: Customizing Realistic Human Photos via Stacked ID Embedding
+- [StoryDiffusion](https://github.com/HVision-NKU/StoryDiffusion) <img src="https://github.com/HVision-NKU/StoryDiffusion/assets/49511209/f79da6b7-0b3b-4dd7-8dd0-ba0b15306fe6" height=25>: Consistent Self-Attention for Long-Range Image and Video Generation 
