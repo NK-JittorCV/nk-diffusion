@@ -23,7 +23,7 @@
 
 ### 🌠  **Key Feature:**
 
-Jittor Compilation for High Performance. Jittor leverages Just-in-Time (JIT) compilation to optimize and compile the entire photomaker framework and meta-operators at runtime.
+Experience the **Jittor** version of Photomaker just like the original PyTorch version, but with even greater speed and convenience.
 
 ---
 
@@ -34,8 +34,8 @@ Jittor Compilation for High Performance. Jittor leverages Just-in-Time (JIT) com
 
 
 ## 🚩 **TODO/Updates**
-- ✅ Realistic generation 
-- ✅ Stylization generation
+- [x] Realistic generation 
+- [ ] Stylization generation
 
 ---
 
@@ -44,31 +44,21 @@ Jittor Compilation for High Performance. Jittor leverages Just-in-Time (JIT) com
 
 ### Realistic generation 
 
-- [![Huggingface PhotoMaker](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/TencentARC/PhotoMaker)
+
 - [**PhotoMaker notebook demo**](photomaker_demo.ipynb)
 
 <p align="center">
-  <img src="https://cdn-uploads.huggingface.co/production/uploads/6285a9133ab6642179158944/BYBZNyfmN4jBKBxxt4uxz.jpeg" height=450>
+  <img src="./readme/results.png" height=450>
 </p>
 
-<p align="center">
-  <img src="https://cdn-uploads.huggingface.co/production/uploads/6285a9133ab6642179158944/9KYqoDxfbNVLzVKZzSzwo.jpeg" height=450>
-</p>
+We can see that the quality of the Iron Man Newton images generated using the Jittor version of Photomaker is **on par with** the PyTorch version. Both versions produce images that are *imaginative and diverse*. 
+
+Additionally, the Jittor version offers **enhanced performance**, making the image generation process faster and more efficient. This improvement allows users to create stunning visuals with greater ease and speed, without compromising on the **artistic creativity and variety** that Photomaker is known for.
 
 ### Stylization generation 
 
-Note: only change the base model and add the LoRA modules for better stylization
+Stylization generation is currently unavailable due to compatibility issues with Jittor. We will address this in a future update.
 
-- [![Huggingface PhotoMaker-Style](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/TencentARC/PhotoMaker-Style)
-- [**PhotoMaker-Style notebook demo**](photomaker_style_demo.ipynb) 
-
-<p align="center">
-  <img src="https://cdn-uploads.huggingface.co/production/uploads/6285a9133ab6642179158944/du884lcjpqqjnJIxpATM2.jpeg" height=450>
-</p>
-  
-<p align="center">
-  <img src="https://cdn-uploads.huggingface.co/production/uploads/6285a9133ab6642179158944/-AC7Hr5YL4yW1zXGe_Izl.jpeg" height=450>
-</p>
 
 # 🔧 Dependencies and Installation
 
@@ -151,11 +141,6 @@ for image_path in image_path_list:
     input_id_images.append(load_image(image_path))
 ```
 
-<div align="center">
-
-<a href="https://github.com/TencentARC/PhotoMaker/assets/21050959/01d53dfa-7528-4f09-a1a5-96b349ae7800" align="center"><img style="margin:0;padding:0;" src="https://github.com/TencentARC/PhotoMaker/assets/21050959/01d53dfa-7528-4f09-a1a5-96b349ae7800"/></a>
-</div>
-
 - Generation
 ```py
 # Note that the trigger word `img` must follow the class word for personalization
@@ -174,11 +159,11 @@ images = pipe(
 gen_images.save('out_photomaker.png')
 ```
 
-<div align="center">
 
-<a href="https://github.com/TencentARC/PhotoMaker/assets/21050959/703c00e1-5e50-4c19-899e-25ee682d2c06" align="center"><img width=400 style="margin:0;padding:0;" src="https://github.com/TencentARC/PhotoMaker/assets/21050959/703c00e1-5e50-4c19-899e-25ee682d2c06"/></a>
+<p align="center">
+  <img src="./readme/photomaker_newton.png" height=450>
+</p>
 
-</div>
 
 ## Start a local gradio demo
 Run the following command:
