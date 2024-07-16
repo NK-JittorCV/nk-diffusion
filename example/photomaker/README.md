@@ -14,25 +14,18 @@
 
 [[Replicate Demo (Realistic)](https://replicate.com/jd7h/photomaker)] &emsp; [[Replicate Demo (Stylization)](https://replicate.com/yorickvp/photomaker-style)] <be>
 
-If the ID fidelity is not enough for you, please try our [stylization application](https://huggingface.co/spaces/TencentARC/PhotoMaker-Style), you may be pleasantly surprised.
 </div>
 
 
 ---
-Official implementation of **[PhotoMaker: Customizing Realistic Human Photos via Stacked ID Embedding](https://huggingface.co/papers/2312.04461)**.
+[Jittor](https://github.com/Jittor/jittor) implementation of **[PhotoMaker: Customizing Realistic Human Photos via Stacked ID Embedding](https://huggingface.co/papers/2312.04461)**.
 
 
-### 🌠  **Key Features:**
+### 🌠  **Key Feature:**
 
-1. Rapid customization **within seconds**, with no additional LoRA training.
-2. Ensures impressive ID fidelity, offering diversity, promising text controllability, and high-quality generation.
-3. Can serve as an **Adapter** to collaborate with other Base Models alongside LoRA modules in community.
+Jittor Compilation for High Performance. Jittor leverages Just-in-Time (JIT) compilation to optimize and compile the entire photomaker framework and meta-operators at runtime.
 
 ---
-<a href="https://trendshift.io/repositories/7008" target="_blank" align=center><img src="https://trendshift.io/api/badge/repositories/7008" alt="TencentARC%2FPhotoMaker | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-
-❗❗ Note: If there are any PhotoMaker based resources and applications, please leave them in the [discussion](https://github.com/TencentARC/PhotoMaker/discussions/36) and we will list them in the [Related Resources](https://github.com/TencentARC/PhotoMaker?tab=readme-ov-file#related-resources) section in README file.
-Now we know the implementation of **Replicate**, **Windows**, **ComfyUI**, and **WebUI**. Thank you all! 
 
 <div align="center">
 
@@ -40,9 +33,9 @@ Now we know the implementation of **Replicate**, **Windows**, **ComfyUI**, and *
 </div>
 
 
-## 🚩 **New Features/Updates**
-- ✅ Jan. 20, 2024. An **important** note: For those GPUs that do not support bfloat16, please change [this line](https://github.com/TencentARC/PhotoMaker/blob/6ec44fc13909d64a65c635b9e3b6f238eb1de9fe/gradio_demo/app.py#L39) to `torch_dtype = torch.float16`, the speed will be **greatly improved** (1min/img (before) vs. 14s/img (after) on V100). The minimum GPU memory requirement for PhotoMaker is **11G** (Please refer to [this link](https://github.com/TencentARC/PhotoMaker/discussions/114) for saving GPU memory).
-- ✅ Jan. 15, 2024. We release PhotoMaker.
+## 🚩 **TODO/Updates**
+- ✅ Realistic generation 
+- ✅ Stylization generation
 
 ---
 
@@ -79,18 +72,19 @@ Note: only change the base model and add the LoRA modules for better stylization
 
 # 🔧 Dependencies and Installation
 
-- Python >= 3.8 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html))
-- [PyTorch >= 2.0.0](https://pytorch.org/)
+- Python = 3.9 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html))
+- JDiffusion: 
 ```bash
-conda create --name photomaker python=3.10
+conda create --name photomaker python=3.9
 conda activate photomaker
-pip install -U pip
 
 # Install requirements
 pip install -r requirements.txt
 
 # Install photomaker
-pip install git+https://github.com/TencentARC/PhotoMaker.git
+cd example/photomaker
+pip install -e .
+
 ```
 
 Then you can run the following command to use it
@@ -201,40 +195,6 @@ If you want to run it on MAC, you should follow [this Instruction](MacGPUEnv.md)
 - Upload more photos of the person to be customized to improve ID fidelity. If the input is Asian face(s), maybe consider adding 'Asian' before the class word, e.g., `Asian woman img`
 - When stylizing, does the generated face look too realistic? Adjust the Style strength to 30-50, the larger the number, the less ID fidelity, but the stylization ability will be better. You could also try out other base models or LoRAs with good stylization effects.
 - Reduce the number of generated images and sampling steps for faster speed. However, please keep in mind that reducing the sampling steps may compromise the ID fidelity.
-
-# Related Resources
-### Replicate demo of PhotoMaker: 
-1. [Demo link](https://replicate.com/jd7h/photomaker), run PhotoMaker on replicate, provided by [@yorickvP](https://github.com/yorickvP) and [@jd7h](https://github.com/jd7h).
-2. [Demo link (style version)](https://replicate.com/yorickvp/photomaker-style).
-
-### WebUI version of PhotoMaker: 
-1. **stable-diffusion-webui-forge**: https://github.com/lllyasviel/stable-diffusion-webui-forge provided by [@Lvmin Zhang](https://github.com/lllyasviel)
-2. **Fooocus App**: [Fooocus-inswapper](https://github.com/machineminded/Fooocus-inswapper) provided by [@machineminded](https://github.com/machineminded)
-
-### Windows version of PhotoMaker: 
-1. [bmaltais/PhotoMaker](https://github.com/bmaltais/PhotoMaker/tree/v1.0.1) by [@bmaltais](https://github.com/bmaltais), easy to deploy PhotoMaker on Windows. The description can be found in [this link](https://github.com/TencentARC/PhotoMaker/discussions/36#discussioncomment-8156199).
-2. [sdbds/PhotoMaker-for-windows](https://github.com/sdbds/PhotoMaker-for-windows/tree/windows) by [@sdbds](https://github.com/sdbds).
-   
-### ComfyUI:
-1. 🔥 **Official Implementation by [ComfyUI](https://github.com/comfyanonymous/ComfyUI)**: https://github.com/comfyanonymous/ComfyUI/commit/d1533d9c0f1dde192f738ef1b745b15f49f41e02
-2. https://github.com/ZHO-ZHO-ZHO/ComfyUI-PhotoMaker
-3. https://github.com/StartHua/Comfyui-Mine-PhotoMaker
-4. https://github.com/shiimizu/ComfyUI-PhotoMaker
-
-### Purely C/C++/CUDA version of PhotoMaker:
-1. [stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp/pull/179) by [@bssrdf](https://github.com/bssrdf).
-
-### Other Applications / Web Demos
-1. **Wisemodel 始智 (Easy to use in China)** https://wisemodel.cn/space/gradio/photomaker 
-2. **OpenXLab (Easy to use in China)**: https://openxlab.org.cn/apps/detail/camenduru/PhotoMaker
- [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://openxlab.org.cn/apps/detail/camenduru/PhotoMaker)
-by [@camenduru](https://github.com/camenduru).
-3. **Colab**: https://github.com/camenduru/PhotoMaker-colab by [@camenduru](https://github.com/camenduru)
-4. **Monster API**: https://monsterapi.ai/playground?model=photo-maker
-5. **Pinokio**: https://pinokio.computer/item?uri=https://github.com/cocktailpeanutlabs/photomaker
-
-### Graido demo in 45 lines
-Provided by [@Gradio](https://twitter.com/Gradio/status/1747683500495691942)
 
 
 # 🤗 Acknowledgements
