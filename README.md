@@ -1,10 +1,21 @@
-# JDiffusion
+# JitterDiffusion
 
 ## Introduction
 
-JDiffusion is a diffusion model library for generating images or videos based on [Jittor](https://github.com/Jittor/jittor), [Jtorch](https://github.com/JITTorch/jtorch), [diffusers](https://github.com/huggingface/diffusers).
+JittorDiffusion is a project **dedicated to transferring amazing diffusion model-based projects** from PyTorch to [**Jittor**](https://github.com/Jittor/jittor), **harnessing Jittor's high performance and unique advantages**.
+
+At the core of Jittor is its JIT compiler, which converts Python code into **efficient CUDA instructions in real-time**, automatically optimizing computations for *speed and memory efficiency* based on input shapes and types. 
+
+By leveraging these features, JittorDiffusion not only enhances performance but also provides flexibility and ease of use. Furthermore, these projects serve as exemplars for future high-quality Jittor projects, showcasing the framework's potential for research, education, and production environments.
 
 ## Installation
+
+Our Work is based on:
+- [jittor](https://github.com/JittorRepos/jittor)
+- [jtorch](https://github.com/JittorRepos/jtorch)
+- [diffusers_jittor](https://github.com/JittorRepos/diffusers_jittor)
+- [transformers_jittor](https://github.com/JittorRepos/transformers_jittor)
+
 ### 0. Clone JDiffusion & Prepare Env
 ```bash
 git clone https://github.com/JittorRepos/JDiffusion.git
@@ -27,6 +38,7 @@ or just
 pip install -r requirement.txt
 ```
 ### 2. Install JDiffusion
+
 ```bash
 cd JDiffusion
 pip install -e .
@@ -41,3 +53,11 @@ pip install cupy
 # Install CuPy for cuda11.2 (Recommended, change cuda version you use)
 pip install cupy-cuda112
 ```
+### 4.Install Specific App
+
+Follow the README in example folder to install the application you want! 
+
+The projects we currently support in the Jittor version: 
+
+- <img src="https://photo-maker.github.io/assets/logo.png" height=50> PhotoMaker: Customizing Realistic Human Photos via Stacked ID Embedding
+- <img src="https://github.com/HVision-NKU/StoryDiffusion/assets/49511209/f79da6b7-0b3b-4dd7-8dd0-ba0b15306fe6" height=50> StoryDiffusion: Consistent Self-Attention for Long-Range Image and Video Generation 
