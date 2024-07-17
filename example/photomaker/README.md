@@ -69,8 +69,8 @@ Stylization generation is currently unavailable due to compatibility issues with
 - Python = 3.9 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html))
 - JDiffusion: 
 ```bash
-conda create --name photomaker python=3.9
-conda activate photomaker
+# use previous Python environment
+conda activate jdiffusion 
 
 # Install requirements
 pip install -r requirements.txt
