@@ -33,7 +33,11 @@ StoryDiffusion can create a magic story by generating consistent images and vide
 ## 🔥 **Examples**
 
 ### Comics generation 
-with the prompt["wake up in the bed",
+
+#### In this work, we transitioned the framework from PyTorch to Jittor. There are no significant differences between them, and this is the resulting output:
+
+#### with the prompt
+["wake up in the bed",
                 "have breakfast",
                 "is on the road, go to the company",
                 "work in the company",
@@ -41,7 +45,9 @@ with the prompt["wake up in the bed",
 
 ![img](../storydiffusion/photos/20240716155157.png)
 
-with the prompt["running in the playground",
+#### with the prompt
+
+["running in the playground",
                 "reading book in the home",
                 "siting on the sofa",
                 "on the bed, at night "
