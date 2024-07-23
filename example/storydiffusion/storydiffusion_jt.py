@@ -328,6 +328,7 @@ class SpatialAttnProcessor2_0(Module):
 
         # linear proj
         hidden_states = attn.to_out[0](hidden_states)
+        
         # dropout
         hidden_states = attn.to_out[1](hidden_states)
 

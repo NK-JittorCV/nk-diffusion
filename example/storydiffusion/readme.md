@@ -39,8 +39,8 @@ StoryDiffusion can create a magic story by generating consistent images and vide
                 "is on the road, go to the company",
                 "work in the company",
 ]
+![img](../storydiffusion/photos/20240723111502.png)
 
-![img](../storydiffusion/photos/20240716155157.png)
 
 #### with the prompt
 
@@ -50,9 +50,9 @@ StoryDiffusion can create a magic story by generating consistent images and vide
                 "on the bed, at night "
 ]
   
+![img](../storydiffusion/photos/20240723111448.png)
 
 
-![img](../storydiffusion/photos/20240716155051.png)
 
 
 
