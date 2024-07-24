@@ -1,4 +1,4 @@
-# JitterDiffusion
+# JittorDiffusion
 
 ## Introduction
 
