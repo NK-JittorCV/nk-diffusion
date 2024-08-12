@@ -1,12 +1,12 @@
-# JittorDiffusion
+# nk-diffusion based on Jittor and JDiffusion
 
 ## Introduction
 
-JittorDiffusion is a project **dedicated to transferring amazing diffusion model-based projects** from PyTorch to [**Jittor**](https://github.com/Jittor/jittor), **harnessing Jittor's high performance and unique advantages**.
+nk-diffusion is a project **dedicated to transferring amazing diffusion model-based projects** from PyTorch to [**Jittor**](https://github.com/Jittor/jittor), **harnessing Jittor's high performance and unique advantages**.
 
 At the core of Jittor is its JIT compiler, which converts Python code into **efficient CUDA instructions in real-time**, automatically optimizing computations for *speed and memory efficiency* based on input shapes and types. 
 
-By leveraging these features, JittorDiffusion not only enhances performance but also provides flexibility and ease of use. Furthermore, these projects serve as exemplars for future high-quality Jittor projects, showcasing the framework's potential for research, education, and production environments.
+By leveraging these features, nk-diffusion not only enhances performance but also provides flexibility and ease of use. Furthermore, these projects serve as exemplars for future high-quality Jittor projects, showcasing the framework's potential for research, education, and production environments.
 
 ## Installation
 
