@@ -1,0 +1,160 @@
+{
+    "combinations": [
+        {
+            "id_prompt": "A hyper-realistic digital painting of a 16 years old girl.",
+            "frame_prompt_list": [
+                "in a flower garden",
+                "building a sandcastle",
+                "in a city park with autumn leaves"
+            ]
+        },
+        {
+            "id_prompt": "A vintage-style poster of a dog",
+            "frame_prompt_list": [
+                "playing a guitar at a country concert",
+                "sitting by a campfire under a starry sky",
+                "riding a skateboard through a bustling city",
+                "posing in front of a historical landmark",
+                "wearing an astronaut suit on the moon"
+            ]
+        },
+        {
+            "id_prompt": "A photo of a dog",
+            "frame_prompt_list": [
+                "dancing to music at a vibrant street festival",
+                "chasing a frisbee in a colorful park",
+                "wearing sunglasses while relaxing on a beach chair",
+                "posing for a photoshoot in a modern art gallery",
+                "jumping through a hoop at a circus performance",
+                "playing with a group of children at a playground",
+                "exploring a retro diner while wearing a bowtie"
+            ]
+        },
+        {
+            "id_prompt": "A mystical illustration of a wise wizard with a long, flowing beard",
+            "frame_prompt_list": [
+                "in a tower filled with ancient tomes and artifacts",
+                "casting a spell by the light of a full moon",
+                "standing before a magical portal in the forest",
+                "summoning a storm over a mountain peak",
+                "writing runes in a dusty spellbook",
+                "mixing potions in a dimly lit chamber",
+                "consulting a crystal ball"
+            ]
+        },
+        {
+            "id_prompt": "A pixar style illustration of a dragon",
+            "frame_prompt_list": [
+                "soaring gracefully through a rainbow sky",
+                "nestled among blooming cherry blossoms",
+                "playfully splashing in a sparkling lake"
+            ]
+        },
+        {
+            "id_prompt": "A whimsical painting of a delicate fairy",
+            "frame_prompt_list": [
+                "hovering over a moonlit pond",
+                "dancing on the petals of a giant flower",
+                "spreading fairy dust over a sleeping village",
+                "sitting on a mushroom in a magical forest",
+                "playing with fireflies at dusk"
+            ]
+        },
+        {
+            "id_prompt": "A hyper-realistic digital painting of an elderly gentleman",
+            "frame_prompt_list": [
+                "wearing a smoking jacket",
+                "at a vintage car show",
+                "wearing a vineyard owner's attire",
+                "on a golf course",
+                "at a classical music concert",
+                "painting a landscape"
+            ]
+        },
+        {
+            "id_prompt": "A vintage-style poster of a ceramic vase with an intricate floral pattern and a glossy, sky-blue glaze",
+            "frame_prompt_list": [
+                "holding a rare bouquet of flowers",
+                "displaying exotic orchids",
+                "complementing a corporate decor",
+                "containing delicate cherry blossoms",
+                "holding a vibrant arrangement of sunflowers",
+                "filled with a fresh bouquet of lavender and wild daisies"
+            ]
+        },
+        {
+            "id_prompt": "A photo of a happy hedgehog with its cheese",
+            "frame_prompt_list": [
+                "in an autumn forest",
+                "next to a tiny cheese wheel",
+                "sitting on a mushroom",
+                "under a picnic blanket",
+                "amid blooming spring flowers"
+            ]
+        },
+        {
+            "id_prompt": "A heartwarming illustration of a friendly troll",
+            "frame_prompt_list": [
+                "under a stone bridge covered in ivy",
+                "guarding a treasure chest in a dark cave",
+                "helping travelers across a river",
+                "sitting by a campfire in a foggy forest",
+                "building a shelter from fallen logs",
+                "fishing in a quiet stream at dusk",
+                "carving runes into a rock",
+                "resting under a large oak tree"
+            ]
+        },
+        {
+            "id_prompt": "A quaint illustration of a hobbit",
+            "frame_prompt_list": [
+                "in a cozy, round door cottage",
+                "sitting by a fireplace in a quaint home",
+                "working in a garden of vibrant vegetables",
+                "enjoying a feast under a starlit sky",
+                "reading a book in a sunlit meadow",
+                "walking through a peaceful village",
+                "celebrating with friends in a rustic tavern",
+                "exploring a hidden valley"
+            ]
+        },
+        {
+            "id_prompt": "A hyper-realistic digital painting of a young ginger boy with his ball",
+            "frame_prompt_list": [
+                "leaves scattering in a gentle breeze",
+                "standing in a quiet meadow",
+                "set against a vibrant sunset",
+                "in a busy street of people",
+                "by a colorful graffiti wall",
+                "amidst a field of blooming wildflowers"            ]
+        },
+        {
+            "id_prompt": "A cinematic portrait of a man and a woman standing together",
+            "frame_prompt_list": [
+                "under a sky full of stars",
+                "on a bustling city street at night",
+                "in a dimly lit jazz club",
+                "walking along a sandy beach at sunset",
+                "in a cozy coffee shop with large windows",
+                "in a vibrant art gallery surrounded by paintings",
+                "under an umbrella during a soft rain",
+                "on a quiet park bench amidst falling leaves",
+                "standing on a rooftop overlooking the city skyline"
+            ]
+        },
+        {
+            "id_prompt": "A cinematic portrait of a man, a woman, and a child",
+            "frame_prompt_list": [
+                "walking in a quiet park",
+                "under a starlit sky",
+                "by a rustic cabin",
+                "on a forest trail",
+                "by a peaceful lake",
+                "at a vibrant market",
+                "in a snowy street",
+                "by a carousel",
+                "on a picnic blanket"
+            ]
+        }
+    ]
+}
